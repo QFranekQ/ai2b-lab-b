@@ -1,0 +1,15 @@
+<div id="frame">
+  <div>List component</div>
+  <Div>
+    <input type="text" [(ngModel)]="inputText">
+    <button (click)="inputToArray()">
+      Dodaj
+    </button>
+  <ul>
+    <li *ngFor="let elem of elements;index as i">
+      {{elem}}
+      <a href="#" (click)="remove(i)">usun</a>
+
+    </li>
+  </ul>
+  </Div>
